@@ -46,7 +46,7 @@ public void vendrePlaces(int nbre, boolean tarifReduit){
     
   }else {
     nbClasseVendueTraiR=nbClasseVendueTraiR+nbre;
- Float   res2= (nbre*(PrixUn*(float)0.2));
+ Float   res2= (nbre*(PrixUn*(float)0.8));
  System.out.println("Salle"+numsalle+":"+"Place vendues"+":"+nbClasseVendueTraiR+"prix="+res2+"à Tarif Reduite");
  }
 }
@@ -56,7 +56,7 @@ public void remiseAZero(){
 }
 public double chiffreAffaires(){
    float res ;
-    res = (nbClasseVendueTraiN*PrixUn)+(nbClasseVendueTraiR*(PrixUn*(float)0.2));
+    res = (nbClasseVendueTraiN*PrixUn)+(nbClasseVendueTraiR*(PrixUn*(float)0.8));
     return res;
 }
 public double tauxRemplissage(){
